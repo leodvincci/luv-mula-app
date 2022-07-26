@@ -132,11 +132,14 @@ body{
 
 
 .myBill{
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient( 117deg,  rgba(123,216,96,1) 39.2%, rgba(255,255,255,1) 156.2% );    font-size: 1.8rem;
+    background-image: url("../images/card-bkg.jpg");
+    background-size: cover;
+    font-size: 1.8rem;
     width: 25rem;
     height: 12rem;
     margin: 1rem;
@@ -145,7 +148,10 @@ body{
 
 .myBill:hover{
     cursor: pointer;
-    background-color: #42e382;
+    opacity: 90%;
+    border-radius: 40px;
+    transition-duration: 200ms;
+
 }
 
 .myBill p:nth-child(1){
@@ -164,6 +170,25 @@ body{
     font-weight: 600;
     background-color: rgb(220, 20, 60);
 }
+.bill-btn.unpaid:hover{
+    cursor: pointer;
+    background-color: rgb(255, 0, 55);
+}
+
+.bill-btn.unpaid:active {
+    cursor: pointer;
+    background-color: rgb(98, 0, 21);
+}
+
+.bill-btn.paid:hover{
+    cursor: pointer;
+    background-color: rgb(27, 171, 52);
+}
+.bill-btn.paid:active {
+    cursor: pointer;
+    background-color: rgb(20, 70, 3);
+}
+
 
 /*#b1{*/
 /*    grid-column: 1 / 4;*/
