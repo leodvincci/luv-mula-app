@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>LuvMula App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -17,13 +20,11 @@
         <nav>
 
             <ul>
-                <li>Dashboard</li>
+                <li>Overview</li>
+                <li id="li-bills">Bills</li>
                 <li>Transactions</li>
-                <li>Accounts</li>
                 <li>Tasks</li>
                 <li>Documents</li>
-                <li>Profile</li>
-                <li>Cards</li>
                 <li>Goals</li>
                 <li>Statistics</li>
                 <li>Transactions</li>
@@ -33,6 +34,37 @@
             </ul>
 
         </nav>
+
+
+    </div>
+
+    <div class="hide" id="bills-container">
+
+        <h1>BILLS</h1>
+        <h2>Total:$1,350</h2>
+
+        <div id="bill-list">
+
+            <div class="myBill" id="b1">
+                <p id="biller-1">Discover</p>
+                <p id="bill-amount-1" >$125.56</p>
+                <button class="bill-btn unpaid"   id="bill-status-1" type="submit">not paid</button>
+            </div>
+
+            <div class="myBill" id="b2">
+                <p id="biller-2" >T-Mobile</p>
+                <p id="bill-amount-2" >$95.96</p>
+                <button class="bill-btn paid" id="bill-status-2" type="submit">Paid</button>
+            </div>
+
+            <div class="myBill" id="b3">
+                <p id="biller-3" >Mortgage</p>
+                <p id="bill-amount-3" >$1,055.46</p>
+                <button class="bill-btn paid" id="bill-status-3"  type="submit">Paid</button>
+            </div>
+
+
+        </div>
 
 
     </div>
