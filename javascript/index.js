@@ -61,7 +61,7 @@ billData().then(x =>
 
         const newP2 = document.createElement("p")
         newP2.id = `bill-amount-${x[i]}`
-        newP2.textContent = x[i].amount
+        newP2.textContent = `$${x[i].amount}`
         newDiv.append(newP2)
 
         const newBtn = document.createElement("button");
