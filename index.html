@@ -10,64 +10,89 @@
 </head>
 <body>
 
-    <div class="logo-container">
-        <img id="logo-img" src="./images/logo.png" alt="">
+<div class="logo-container">
+    <img id="logo-img" src="./images/logo.png" alt="">
+</div>
+
+
+<div id="nav-container">
+
+    <nav>
+
+        <ul>
+            <li>Overview</li>
+            <li id="li-bills">Bills</li>
+            <li>Transactions</li>
+            <li>Tasks</li>
+            <li>Documents</li>
+            <li>Goals</li>
+            <li>Statistics</li>
+            <li>Transactions</li>
+            <li>Messages</li>
+            <li>Notifications</li>
+            <li>Settings</li>
+        </ul>
+
+    </nav>
+
+
+</div>
+
+<div class="hidden" id="add-bill-modal">
+
+    <form id="modal-form" action="">
+
+        <label style="color: seagreen">Payee </label>
+        <input style="font-size: 2rem" type="text">
+
+        <label style="color: seagreen">Amount Owed </label>
+        <input style="font-size: 2rem" type="text">
+        <button id="modal-btn" type="submit">done</button>
+
+    </form>
+
+</div>
+
+<div id="upTop">
+    <h1>BILLS</h1>
+    <h2>Total:$1,350</h2>
+    <button id="add-bill-btn" type="submit">+</button>
+</div>
+
+
+
+<div class="hide" id="bills-container">
+
+
+    <div id="bill-list">
+
+
+
+<!--        <div class="myBill" id="b1">-->
+<!--            <p id="biller-1">Discover</p>-->
+<!--            <p id="bill-amount-1" >$125.56</p>-->
+<!--            <button class="bill-btn unpaid"   id="bill-status-1" type="submit">not paid</button>-->
+<!--        </div>-->
+
+<!--        <div class="myBill" id="b2">-->
+<!--            <p id="biller-2" >T-Mobile</p>-->
+<!--            <p id="bill-amount-2" >$95.96</p>-->
+<!--            <button class="bill-btn paid" id="bill-status-2" type="submit">Paid</button>-->
+<!--        </div>-->
+
+<!--        <div class="myBill" id="b3">-->
+<!--            <p id="biller-3" >Mortgage</p>-->
+<!--            <p id="bill-amount-3" >$1,055.46</p>-->
+<!--            <button class="bill-btn paid" id="bill-status-3"  type="submit">Paid</button>-->
+<!--        </div>-->
+
+
     </div>
 
-
-    <div id="nav-container">
-
-        <nav>
-
-            <ul>
-                <li>Overview</li>
-                <li id="li-bills">Bills</li>
-                <li>Transactions</li>
-                <li>Tasks</li>
-                <li>Documents</li>
-                <li>Goals</li>
-                <li>Statistics</li>
-                <li>Transactions</li>
-                <li>Messages</li>
-                <li>Notifications</li>
-                <li>Settings</li>
-            </ul>
-
-        </nav>
+    
 
 
-    </div>
-
-    <div class="hide" id="bills-container">
-
-        <h1>BILLS</h1>
-        <h2>Total:$1,350</h2>
-
-        <div id="bill-list">
-
-            <div class="myBill" id="b1">
-                <p id="biller-1">Discover</p>
-                <p id="bill-amount-1" >$125.56</p>
-                <button class="bill-btn unpaid"   id="bill-status-1" type="submit">not paid</button>
-            </div>
-
-            <div class="myBill" id="b2">
-                <p id="biller-2" >T-Mobile</p>
-                <p id="bill-amount-2" >$95.96</p>
-                <button class="bill-btn paid" id="bill-status-2" type="submit">Paid</button>
-            </div>
-
-            <div class="myBill" id="b3">
-                <p id="biller-3" >Mortgage</p>
-                <p id="bill-amount-3" >$1,055.46</p>
-                <button class="bill-btn paid" id="bill-status-3"  type="submit">Paid</button>
-            </div>
-
-
-        </div>
-
-
-    </div>
+</div>
 
 <script src="./javascript/index.js"></script>
 </body>
